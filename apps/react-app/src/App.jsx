@@ -46,11 +46,7 @@ function App({ signOut, user }) {
   return (
     <>
       <h1>Hello {user.username}</h1>
-      <Button
-  onClick={() => Auth.federatedSignIn({provider: "Okta"})}
->
-  Federated Sign In
-</Button>
+      <button onClick={signOut}>Sign out</button>
     </>
   );
 }
